@@ -18,6 +18,9 @@ public class Exercise {
     }
 
     public static int divisionNumbers(int valueOne, int valueTwo){
+        if (valueTwo == 0) {
+            throw new IllegalArgumentException("No se puede dividir por cero");
+        }
         if (valueTwo <= valueOne) {
             return 1 + divisionNumbers(subtractNumbers(valueOne,valueTwo), valueTwo);
         }

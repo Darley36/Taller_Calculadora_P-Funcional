@@ -4,6 +4,7 @@ import java.util.function.IntBinaryOperator;
 import java.util.stream.IntStream;
 
 public class ExerciseFuncional {
+
         static IntBinaryOperator resta = (a, b) -> a - b;
 
         static IntBinaryOperator suma = (a, b) -> a + b;
@@ -28,8 +29,6 @@ public class ExerciseFuncional {
 
 
         public static void main(String[] args) {
-
-
           System.out.println(suma.applyAsInt(3, 2));
           System.out.println(resta.applyAsInt(3, 2));
           System.out.println(mult.applyAsInt(5, 11));
